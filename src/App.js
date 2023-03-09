@@ -4,12 +4,13 @@ import { NavBar } from './NavBar/NavBar';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Card} from './Cards/Card'; 
 import {ContenedorProductos} from "./contenedorProductos/ContendorProductos"
+import { startTransition } from "react";
 // tengo entendido que simplemente habia que hacer un modulo con la propiedad greeting para poner ahi los nombres de los productos y nada mas,
 // pero me tome la libertad de crear unas tarjetas por mera curiosidad de como era hacer esto en react
 function App() {
 
   return (
-    <div>
+    <div className="fondo">
       <div>
         <NavBar/>
       </div>
