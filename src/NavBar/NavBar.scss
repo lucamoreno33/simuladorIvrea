@@ -1,0 +1,41 @@
+body{
+    margin: 0;
+}
+
+.header{
+    background-color: #28282B;
+    &-container{
+        height: 80px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: #28282B;
+        box-shadow:  20px 20px 60px #131314,
+            -20px -20px 60px #3d3d42;
+
+    }
+    &-img{
+        width: 200px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+
+.Navbar{
+    display: flex;
+    width: 70%;
+    justify-content: end;
+    &-link{
+        color: #eb820f;
+        margin: 0 5px 0 5px;
+        &:hover{
+            cursor: pointer;
+        }
+
+    }
+
+}
+
+
