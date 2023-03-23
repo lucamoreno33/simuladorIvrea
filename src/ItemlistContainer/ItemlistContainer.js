@@ -5,7 +5,7 @@ import "./contenedor.scss"
 import libreria from "../data/libros.json"
 import { useParams } from 'react-router-dom'
 
-export const ContenedorProductos = () => {
+export const ItemlistContainer = () => {
     const [libros, setLibros] = useState([])
     const [loading, setLoading] = useState(true)
     const {TipoLibro} = useParams()
