@@ -1,28 +1,23 @@
 .card {
     margin: auto auto;
     border-radius: 10px;
+    height: 500px;
     padding: 0;
     background-color: white;
-    width: 70%;
     margin: 8px;
-    height: auto;
     background: #28282B;
     box-shadow:  11px 11px 22px #1c1c1f,
             -11px -11px 22px #343437;
     &-body{
-        width: 100%;
         background-color: white;
         border-radius: 0 0 10px 10px;
     }
     &-imagen{
-        height: auto;
-        width: 100%;
-        object-fit: contain;
         overflow: hidden;
         border-radius: 10px 10px 0 0;
     }
     &-boton{
-        width: 50%;
+        
         height: auto;
     }
 }

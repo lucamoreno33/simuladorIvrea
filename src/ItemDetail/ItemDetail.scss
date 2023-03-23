@@ -1,0 +1,30 @@
+.ItemDetail{
+    padding: 20px;
+    border-radius: 20px;
+    
+    background: #1e1d1c;
+    box-shadow: inset 14px 14px 23px #121111,
+            inset -14px -14px 23px #2a2927;
+    &-main{
+        color: aliceblue;
+        height: 600px;
+    }
+    &-imagen{
+        height: 90%;
+        border-radius: 20px;
+        object-fit: cover;
+        
+    }
+    &-data{
+        height: 100%;
+    }
+    &-texto{
+        overflow: scroll;
+        height: 50%;
+    }
+    &-precio{
+        color: #eb820f;
+        font-size: 50px;
+        font-weight: 700;
+    }
+}
