@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import './Card.scss'
+
+
 export const Card = ({card}) => {
     return(
             <div className='card col-lg-3 col-md-5 col-sm-12'>
@@ -9,8 +11,6 @@ export const Card = ({card}) => {
                     <p>tipo: {card.tipo}</p>
                     <p>precio: ${card.precio}</p>
                     <Link to={`/${card.tipo}/${card.id}`} className="btn btn-primary card-boton m-1" id="botonCompra">ver mas</Link>
-                    <button className="btn btn-primary card-boton m-1">+</button>
-                    <button className="btn btn-primary card-boton m-1">-</button>
                 </div>
             </div>
     )

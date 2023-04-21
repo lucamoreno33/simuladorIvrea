@@ -1,0 +1,57 @@
+.cardCarro{
+    height: 300px;
+    width: 100%;
+    display: flex;
+    background-color: #CC5500;
+    border-radius: 10px;
+
+    
+    &-img{
+        height: 100%;
+        border-radius: 10px 0 0 10px;
+    }
+    &-titulo{
+        height: fit-content;
+        font-style: oblique;
+        font-weight: 600;
+        border-bottom: 1px solid black;
+        padding: 5px;
+
+    }
+    &-data{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+        
+
+    }
+    &-descripcion{
+        height:fit-content;
+        color: black;
+        font-size: large;
+        font-weight: 800;
+        margin-top: 30px;
+        
+        
+    }
+    &-titulo{
+        color: white;
+    }
+    &-trashcan{
+        font-size: 40px;
+        background-color: white;
+        padding: 5px;
+        border-radius: 5px;
+        align-self: center;
+        margin-right: 20px;
+        &:hover{
+            cursor: pointer;
+            background-color: #CC5500;
+            color: white;
+            padding: 2px;
+        }
+    }
+    
+    
+}

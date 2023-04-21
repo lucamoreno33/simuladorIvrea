@@ -1,29 +1,26 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
-import { PedirDatos } from "../Helpers/PedirDatos"
 import ItemDetail from "../ItemDetail/ItemDetail"
+import { getDoc, doc } from "firebase/firestore"
+import { database } from "../firebase/config"
 
 const ItemDetailContainer = () => {
     const [item, setItem] = useState(null)
     const [loading, setLoading] = useState(true)
 
-    const { TipoLibro, libroId} = useParams()
-    console.log(TipoLibro)
-    console.log(libroId)
+    const { libroId } = useParams()
 
     useEffect(() => {
         setLoading(true)
+        const documentoLibro = doc(database, "productos", libroId)
+        getDoc(documentoLibro)
+            .then((doc) => {
+                setItem(doc.data())
+            })
+        .finally(() => setLoading(false))
 
-        PedirDatos()
-            .then((res) => {
-                setItem( res.find((prod) => prod.id === Number(libroId) && prod.tipo === TipoLibro) )  
-            })
-            .finally(() => {
-                setLoading(false)
-            })
     }, [])
-    console.log(item)
-    
+
     return(
         <div className="container my-5">
             {

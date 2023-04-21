@@ -26,7 +26,7 @@ body{
 .Navbar{
     display: flex;
     width: 70%;
-    justify-content: end;
+    justify-content: flex-end;
     &-link{
         text-decoration: none;
         color: #eb820f;

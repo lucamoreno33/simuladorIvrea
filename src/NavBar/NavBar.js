@@ -1,6 +1,6 @@
 import logo from './ivea.png'
 import './NavBar.scss'
-import Carrito from './CarritoLogo/Carrito'
+import CarritoLogo from './CarritoLogo/CarritoLogo'
 import { Link } from 'react-router-dom'
 
 export const NavBar = () => {
@@ -13,7 +13,7 @@ export const NavBar = () => {
                     <Link to='/libros' className="Navbar-link fs-4">libros</Link>
                     <Link to='/comics' className="Navbar-link fs-4">comics</Link>
                 </nav>
-                <Carrito/>
+                <CarritoLogo/>
             </div>
             
         </header>
